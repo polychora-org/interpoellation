@@ -1,0 +1,14 @@
+#N canvas 675 222 451 301 10;
+#X obj 54 22 inlet;
+#X obj 54 126 *~ 0.33333;
+#X obj 54 74 play_loop \$1-0.wav;
+#X obj 292 74 play_loop \$1-99.wav;
+#X obj 170 74 play_loop \$1-50.wav;
+#X obj 54 148 outlet~;
+#X connect 0 0 2 0;
+#X connect 0 0 4 0;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
