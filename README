@@ -1,3 +1,9 @@
-# interp{o,el}late
+# interp{o,el}lation
 
-Requirements: espeak
+Cora Johnson-Roberson, 2018.
+
+## Development
+
+Requirements:
+- espeak (with [MBROLA voices](http://espeak.sourceforge.net/mbrola.html) installed)
+- sox
