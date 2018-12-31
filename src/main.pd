@@ -1,6 +1,6 @@
-#N canvas 250 166 1030 456 10;
+#N canvas 250 197 1030 457 10;
 #X obj 193 368 output~;
-#X obj 205 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 205 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 314 197 trio mb-us1;
 #X obj 406 197 trio mb-us2;
@@ -64,6 +64,10 @@
 #X connect 22 0 21 0;
 #X connect 23 0 22 0;
 #X restore 189 298 pd rotating_pan;
+#X obj 154 164 vsl 14 106 0.125 8 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 150 292 5 0 0 0 - - -, f 5;
+#X text 4 292 rotation frequency (Hz);
 #X connect 1 0 2 0;
 #X connect 1 0 4 0;
 #X connect 1 0 3 0;
@@ -75,3 +79,5 @@
 #X connect 7 0 8 2;
 #X connect 8 0 0 0;
 #X connect 8 1 0 1;
+#X connect 9 0 8 0;
+#X connect 9 0 10 0;
