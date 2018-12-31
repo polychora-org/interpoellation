@@ -60,4 +60,5 @@ main = do
       xPhon <- getPhonemes x
       yPhon <- getPhonemes y
       mapM_ putStrLn (intermediates xPhon yPhon)
+      mapM_ putStrLn (init . tail $ intermediates yPhon xPhon)
     _ -> putStrLn "Usage: ./gen_utterances.hs \"word or phrase\" \"world of rays\""
